@@ -23,6 +23,9 @@ group :development, :test do
   gem "brakeman", require: false # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "rubocop-rails-omakase", require: false # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rspec-rails", "~> 8.0"
+  gem "rswag-api", "~> 2.17"
+  gem "rswag-ui", "~> 2.17"
+  gem "rswag-specs", "~> 2.17"
 end
 
 group :development do
