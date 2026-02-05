@@ -38,4 +38,5 @@ group :test do
   gem "capybara" # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "selenium-webdriver" # Drive real browsers (Chrome, Firefox, etc.) for system tests with Capybara and RSpec [https://www.selenium.dev/documentation/webdriver/]
   gem "webdrivers" # Automatically download and manage browser drivers (e.g., chromedriver, geckodriver) for Selenium tests [https://github.com/titusfortner/webdrivers]
+  gem "capybara-screenshot" # Capture and save screenshots of failing Capybara system tests, useful for debugging UI issues [https://github.com/mattheworiordan/capybara-screenshot]
 end
