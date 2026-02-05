@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   if Rails.env.development?
-    mount Rswag::Ui::Engine => '/docs'
-    mount Rswag::Api::Engine => '/docs'
+    mount Rswag::Ui::Engine => "/docs"
+    mount Rswag::Api::Engine => "/docs"
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
