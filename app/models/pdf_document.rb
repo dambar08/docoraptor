@@ -23,7 +23,7 @@ class PdfDocument
   end
 
   def self.from_io(io)
-    tf = Tempfile.create(["pdf", ".pdf"])
+    tf = Tempfile.create([ "pdf", ".pdf" ])
     File.binwrite(tf.path, io.read)
     new(tf)
   end
@@ -68,7 +68,7 @@ class PdfDocument
   # ---------- infra ----------
 
   def self.safe_process(inputs)
-    output = Tempfile.create(["pdf_output", ".pdf"])
+    output = Tempfile.create([ "pdf_output", ".pdf" ])
     yield(inputs, output)
     new(output)
   rescue

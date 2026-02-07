@@ -20,7 +20,7 @@ gem "rack-cors", "~> 3.0" # Handle Cross-Origin Resource Sharing (CORS) for APIs
 gem "libreconv", "~> 0.9.5" # Convert office documents (e.g., DOC, XLS, PPT) to PDF using LibreOffice in the background [https://github.com/DocSpring/libreconv]
 gem "prawn", "~> 2.4" # Generate PDFs programmatically in Ruby (draw text, tables, images, shapes) [https://github.com/prawnpdf/prawn]
 gem "prawn-templates", "~> 0.1.2" # Fill and overlay content onto existing PDF templates using Prawn [https://github.com/prawnpdf/prawn-templates]
-gem "combine_pdf", "~> 1.0" #Merge, split, and manipulate existing PDF files (reorder, rotate, stamp pages) [https://github.com/boazsegev/combine_pdf]
+gem "combine_pdf", "~> 1.0" # Merge, split, and manipulate existing PDF files (reorder, rotate, stamp pages) [https://github.com/boazsegev/combine_pdf]
 gem "wicked_pdf", "~> 2.8" # Render HTML/CSS (Rails views) into PDFs using wkhtmltopdf [https://github.com/mileszs/wicked_pdf]
 
 group :development, :test do

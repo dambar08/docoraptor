@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe PdfDocument, type: :model do
   let(:tempfile) do
-    tf = Tempfile.new(["test", ".pdf"])
+    tf = Tempfile.new([ "test", ".pdf" ])
     tf.write("PDFDATA")
     tf.rewind
     tf
@@ -64,7 +64,7 @@ RSpec.describe PdfDocument, type: :model do
   end
 
   describe "#encrypt" do
-    let(:output_file) { Tempfile.new(["out", ".pdf"]) }
+    let(:output_file) { Tempfile.new([ "out", ".pdf" ]) }
 
     before do
       prawn = double("PrawnDoc")
@@ -85,8 +85,8 @@ RSpec.describe PdfDocument, type: :model do
   end
 
   describe ".merge" do
-    let(:file1) { Tempfile.new(["a", ".pdf"]) }
-    let(:file2) { Tempfile.new(["b", ".pdf"]) }
+    let(:file1) { Tempfile.new([ "a", ".pdf" ]) }
+    let(:file2) { Tempfile.new([ "b", ".pdf" ]) }
 
     let(:combine) { double("CombinePDF") }
 
@@ -98,7 +98,7 @@ RSpec.describe PdfDocument, type: :model do
     end
 
     it "merges files and returns PdfDocument" do
-      result = described_class.merge([file1, file2])
+      result = described_class.merge([ file1, file2 ])
 
       expect(result).to be_a(PdfDocument)
       expect(CombinePDF).to have_received(:new)
