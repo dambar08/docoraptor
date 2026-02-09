@@ -7,3 +7,23 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+class UserSeeder
+  attr_reader :email_address
+
+  def initialize(email_address: "u@mail.com")
+    email_address = email_address
+  end
+
+  def run
+    unless user = User.find_by(email_address: email_address)
+      user = User.build(email_address: email_address)
+      user.password = "password"
+      user.save!
+    end
+    user
+  end
+end
+
+
+UserSeeder.new.run
