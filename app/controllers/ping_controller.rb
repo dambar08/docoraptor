@@ -1,4 +1,5 @@
 class PingController < ApplicationController
+  allow_unauthenticated_access
   rescue_from(Exception) { render_down }
 
   def show
