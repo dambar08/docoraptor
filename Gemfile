@@ -22,6 +22,7 @@ gem "prawn", "~> 2.4" # Generate PDFs programmatically in Ruby (draw text, table
 gem "prawn-templates", "~> 0.1.2" # Fill and overlay content onto existing PDF templates using Prawn [https://github.com/prawnpdf/prawn-templates]
 gem "combine_pdf", "~> 1.0" # Merge, split, and manipulate existing PDF files (reorder, rotate, stamp pages) [https://github.com/boazsegev/combine_pdf]
 gem "wicked_pdf", "~> 2.8" # Render HTML/CSS (Rails views) into PDFs using wkhtmltopdf [https://github.com/mileszs/wicked_pdf]
+gem "active_storage_validations", "~> 3.0" # Adds validations for Active Storage attachments (presence, content type, size) [https://github.com/igorkasyanchuk/active_storage_validations]
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude" # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
