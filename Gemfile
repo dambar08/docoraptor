@@ -33,6 +33,10 @@ group :development, :test do
   gem "rswag-api", "~> 2.17"
   gem "rswag-ui", "~> 2.17"
   gem "rswag-specs", "~> 2.17"
+  gem "factory_bot_rails", "~> 6.5"
+  gem "dotenv-rails", "~> 3.2"
+  gem "faker", "~> 3.6"
+  gem "db-annotate", git: "https://github.com/eddyjaga/annotate_models-rails8.git", branch: "main"
 end
 
 group :development do
@@ -44,4 +48,6 @@ group :test do
   gem "selenium-webdriver" # Drive real browsers (Chrome, Firefox, etc.) for system tests with Capybara and RSpec [https://www.selenium.dev/documentation/webdriver/]
   gem "webdrivers" # Automatically download and manage browser drivers (e.g., chromedriver, geckodriver) for Selenium tests [https://github.com/titusfortner/webdrivers]
   gem "capybara-screenshot" # Capture and save screenshots of failing Capybara system tests, useful for debugging UI issues [https://github.com/mattheworiordan/capybara-screenshot]
+  gem "shoulda-matchers", "~> 7.0"
+  gem "database_cleaner-active_record", "~> 2.2"
 end

@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/eddyjaga/annotate_models-rails8.git
+  revision: 9cea39ffecd862cc55fcaa3c2a4834aefea8752b
+  branch: main
+  specs:
+    db-annotate (1.0.0)
+      activerecord (>= 7.1, < 9.0)
+      rake (>= 10.4, < 14.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -123,16 +132,30 @@ GEM
     crass (1.0.6)
     cssbundling-rails (1.4.3)
       railties (>= 6.0.0)
+    database_cleaner-active_record (2.2.2)
+      activerecord (>= 5.a)
+      database_cleaner-core (~> 2.0)
+    database_cleaner-core (2.0.1)
     date (3.5.1)
     debug (1.11.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
     diff-lcs (1.6.2)
     dotenv (3.2.0)
+    dotenv-rails (3.2.0)
+      dotenv (= 3.2.0)
+      railties (>= 6.1)
     drb (2.2.3)
     ed25519 (1.4.0)
     erb (6.0.1)
     erubi (1.13.1)
+    factory_bot (6.5.6)
+      activesupport (>= 6.1.0)
+    factory_bot_rails (6.5.1)
+      factory_bot (~> 6.5)
+      railties (>= 6.1.0)
+    faker (3.6.0)
+      i18n (>= 1.8.11, < 2)
     ffi (1.17.3-aarch64-linux-gnu)
     ffi (1.17.3-aarch64-linux-musl)
     ffi (1.17.3-arm-linux-gnu)
@@ -394,6 +417,8 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
+    shoulda-matchers (7.0.1)
+      activesupport (>= 7.1)
     sshkit (1.25.0)
       base64
       logger
@@ -466,7 +491,12 @@ DEPENDENCIES
   capybara-screenshot
   combine_pdf (~> 1.0)
   cssbundling-rails
+  database_cleaner-active_record (~> 2.2)
+  db-annotate!
   debug
+  dotenv-rails (~> 3.2)
+  factory_bot_rails (~> 6.5)
+  faker (~> 3.6)
   image_processing (~> 1.2)
   jbuilder
   jsbundling-rails
@@ -486,6 +516,7 @@ DEPENDENCIES
   rswag-ui (~> 2.17)
   rubocop-rails-omakase
   selenium-webdriver
+  shoulda-matchers (~> 7.0)
   stimulus-rails
   thruster
   turbo-rails
